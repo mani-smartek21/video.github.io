@@ -1,0 +1,133 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-height: 600px;
+	min-width: 990px;
+	background-color: #ccc;
+}
+body * {
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	color: #333;
+}
+#wrapper {
+	border: 1px solid #ddd;
+	background-color: #fff;
+	width: 854px;
+	height: 528px;
+	margin: -264px 0 0 -427px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+	-moz-box-shadow:  0 0 20px rgba(0, 0, 0, .3);
+	-webkit-box-shadow:  0 0 20px rgba(0, 0, 0, .3);
+}
+#carousel {
+	width: 854px;
+	height: 528px;
+	margin: 20px 0 0 20px;
+	overflow: hidden;
+}
+#carousel img {
+	display: block;
+	float: left;
+}
+#prev, #next {
+	display: block;
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 20px;
+}
+#prev img, #next img {
+	background: url(template05/images/thumb-bgs.png) 0 0 no-repeat transparent;
+	display: none;
+	padding: 15px;
+	position: absolute;
+	top: 120px;
+}
+#prev:hover img, #next:hover img {
+	display: block;
+}
+#prev {
+	left: 20px;
+}
+#next {
+	right: 20px;
+}
+#prev img {
+	background-position: 0 -230px;
+	padding-left: 25px;
+	left: 0;
+}
+#next img {
+	background-position: 0 -115px;
+	padding-right: 25px;
+	right: 0;
+}
+#wrapper:hover #prev, #wrapper:hover #next {
+	display: block !important;
+}
+#navi {
+	width: 854px;
+	margin: 15px 0 0 0px;
+}
+#pagenumber, #title, #pager {
+	margin: 0;
+	padding: 0;
+}
+#pagenumber {
+	width: 200px;
+	float: left;
+}
+#title {
+	font-size: 18px;
+	text-align: left;
+	width: 40%;
+	float: left;
+}
+#pager {
+	text-align: right;
+	width: 40%;
+	float: right;
+}
+#pager a {
+	text-decoration: none;
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	width: 18px;
+	height: 20px;
+	position: relative;
+}
+#pager a.selected {
+	background-color: #666;
+	color: #fff;
+}
+#pager a img {
+	background: url(template05/images/thumb-bgs.png) 0 0 no-repeat transparent;
+	padding: 15px 15px 25px 15px;
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	left: -57px;
+}
+#pager a:hover img {
+	display: block;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+#VideoWrapper {
+	width: 854px;
+	height: 480px;
+	background-color: #333;
+	box-shadow: 0 1px 1px #013;
+	-moz-box-shadow:  0 1px 1px #013;
+	-webkit-box-shadow:  0 1px 1px #013;
+}
